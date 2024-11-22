@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const UpdatePage = () => {
     const inputRefs = useRef({});
@@ -16,7 +16,7 @@ const UpdatePage = () => {
     });
     const [errors, setErrors] = useState({});
     const [editCount, setEditCount] = useState(0);
-    const navigate = useNavigate();
+
 
     useEffect(() => {
         const fetchStudent = async () => {
